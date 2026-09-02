@@ -1,0 +1,28 @@
+{
+  "name": "@academorix/email-templates",
+  "version": "1.1.0-draft",
+  "private": true,
+  "description": "Academorix transactional + marketing email templates · React Email · Track Orange rebind on the shared Figentra shell.",
+  "type": "module",
+  "scripts": {
+    "dev": "email dev --dir ./src --port 3005",
+    "export": "email export --dir ./src --out ./dist",
+    "render:welcome": "tsx ./scripts/render.ts welcome",
+    "render:session-reminder": "tsx ./scripts/render.ts session-reminder",
+    "render:invoice": "tsx ./scripts/render.ts invoice",
+    "render:newsletter": "tsx ./scripts/render.ts newsletter"
+  },
+  "dependencies": {
+    "@react-email/components": "^0.0.42",
+    "@react-email/render": "^1.2.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react-email": "^4.3.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
